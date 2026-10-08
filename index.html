@@ -16,10 +16,10 @@
 
 <h1>Savora — Privacy Policy</h1>
 <p class="meta">
-  Applies to the Android app <strong>Savora</strong>
-  (package <code>com.ardentdigitals.savora</code>), published by
+  Applies to the app <strong>Savora</strong> for Android and iOS
+  (package and bundle ID <code>com.ardentdigitals.savora</code>), published by
   <strong>Ardent Digitals</strong>.<br>
-  Effective date: 1 September 2026. Last updated: 1 September 2026.
+  Effective date: 1 September 2026. Last updated: 8 October 2026 (iOS added).
 </p>
 
 <p>This policy explains what Savora does with information. It is short because the
@@ -31,7 +31,7 @@ yourself, and no profile is created for you on any server.</p>
 
 <h2>What we store on your device</h2>
 <p>If you use the profile screen, the following is stored on your phone only, in
-Android's standard private app storage:</p>
+the operating system's standard private app storage (Android or iOS):</p>
 <ul>
   <li>the name and email address you type in, if any;</li>
   <li>your chosen default district;</li>
@@ -45,7 +45,7 @@ copied to any server, and we have no way to see it.</p>
 <p>Savora asks for location permission only when you tap “Use current location” on
 the profile screen. The app then reads your position once and converts it into a
 district name — for example “Dhanmondi, Dhaka” — using the geocoding service built
-into your Android device. Only that district name is saved, on your phone. Your
+into your device (Android's or Apple's geocoder). Only that district name is saved, on your phone. Your
 coordinates are not stored by the app and are never sent to us.</p>
 <p>Location is processed only for as long as it takes to work out the district name,
 and is not retained afterwards. You never have to grant this permission: you can pick
@@ -67,7 +67,7 @@ IP address. It receives no name, no email address and no location from Savora.</
 
 <h2>How we protect data</h2>
 <p>All network traffic between the app and its hosting provider uses encrypted HTTPS
-connections. Anything you enter stays in Android's private per-app storage, which the
+connections. Anything you enter stays in the private per-app storage of Android or iOS, which the
 operating system keeps isolated from other apps on your device. Because none of your
 personal data is transmitted to us, there is no copy of it on our side that could be
 exposed.</p>
@@ -78,8 +78,9 @@ lives on your own device for as long as you keep the app installed.</p>
 <p>To delete it, do either of the following:</p>
 <ul>
   <li>uninstall Savora — this removes all of it; or</li>
-  <li>go to Android Settings &rarr; Apps &rarr; Savora &rarr; Storage &rarr;
-      Clear data, which resets the app to its first-run state.</li>
+  <li>on Android, go to Settings &rarr; Apps &rarr; Savora &rarr; Storage &rarr;
+      Clear data, which resets the app to its first-run state. On iOS, uninstalling
+      the app is the way to remove its data.</li>
 </ul>
 <p>No request to us is needed, and there is nothing for us to delete on our side. If
 you would like confirmation of this in writing, contact us at the address below.</p>
@@ -89,8 +90,8 @@ you would like confirmation of this in writing, contact us at the address below.
   <li>It does not share, route, resell or otherwise make use of your internet
       connection or bandwidth for any purpose other than fetching the offers you see
       in the app.</li>
-  <li>It runs nothing in the background. Savora does not hold Android's
-      <code>FOREGROUND_SERVICE</code> permission, so it cannot keep a service running
+  <li>It runs nothing in the background. On iOS it uses no background modes. On Android it does not hold
+      the <code>FOREGROUND_SERVICE</code> permission, so it cannot keep a service running
       in the background, and it declares no boot receiver, so it never starts itself
       when your device boots. Closing the app stops everything it was doing.</li>
   <li>It shows no advertising and reads no advertising identifier.</li>
@@ -100,6 +101,8 @@ you would like confirmation of this in writing, contact us at the address below.
 </ul>
 
 <h2>Permissions the app requests</h2>
+<p>On iOS the only permission is location “While Using the App”, for
+“Use current location”, and only if you grant it. On Android:</p>
 <ul>
   <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> — to download offers.</li>
   <li><code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code> — only
